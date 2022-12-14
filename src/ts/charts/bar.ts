@@ -110,7 +110,7 @@ export class Bar extends Chart {
     // properties
     let fontSize = prop.fontSize;
     if (fontSize === FONT_DYNAMIC) {
-      fontSize = rectHeight * (2 / 3);
+      fontSize = 0;
     }
 
     const fontMp = fontSize / prop.fontSizeFactor;
