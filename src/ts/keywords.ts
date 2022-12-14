@@ -15,11 +15,7 @@ let reactions: Reaction[] = [
     display: "~",
     keywords: ["2"],
   },
-  {
-    sorting: 3,
-    display: "-1",
-    keywords: ["-1", "0", "no", "nein", "nay"],
-  },
+  
 ];
 
 export function updateReactions(r: Reaction[]) {
