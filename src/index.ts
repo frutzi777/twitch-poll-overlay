@@ -51,20 +51,5 @@ storage.on("update", (reaction: Reaction, value: number, mode: UpdateMode) => {
   }
 });
 
-job.on("start", () => {
-  console.log("Job started!");
-
-  storage.drawChart(chart);
-
-  // fade in
-  animation.fade(settings.afid, settings.afis, FadeDirection.IN);
-});
-
-job.on("cancel", () => {
-  console.log("Job canceled!");
-
-  // reset values
-  storage.resetStorage();
-
-  animation.fade(settings.afod, settings.afos, FadeDirection.OUT);
-});
+storage.drawChart(chart);
+animation.fade(settings.afid, settings.afis, FadeDirection.IN);
